@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href=" apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css/>
+    <title>Cafe</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src=" logo.png" alt="logo">
+        </a>
+        <nav class="navbar">
+           <a href="#home">Home</a>
+           <a href="#about">About</a>
+           <a href="#menu">Menu</a>
+           <a href="#review">Review</a>
+           <a href="#contact">Contact</a>
+           <a href="#blog">Blog</a>
+        </nav>
+        <div class="icon">
+            <div class="cart" id="cart" >
+                <img src=" shopping-cart.png" id="shops">
+                <div class="list" id="dis">
+                    <ul id="list">
+                    </ul>
+                </div>
+            </div>
+            <div class="search" id="search">
+                <img src=" search-interface-symbol (1).png">
+                <input type="search" id="sear" class="sear">
+            </div>
+            <!-- <div class="bar" id="bar"><img src=" menu (1).png"></div> -->
+        </div>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <div class="home" id="home">
+            <div class="para">
+                <h2>Its Always a Good Time for Tea</h2>
+                <p>Tea is not just a beverage in India-it is an emotion. It is the ultimate remedy that not only relieves stress but also soothes the soul. </p>
+                <button>Know more</button>
+            </div>
+        </div>
+        <!-- About Section -->
+        <div class="about" id="about">             
+            <p class="line">About Us</p>           
+            <div class="info">                
+                <div class="found">
+                    <img src=" cafe.avif">
+                </div>
+                <div class="us">
+                    <h3>The Founder</h3>
+                    <p>Mr Dashani says “When I travelled abroad, I saw people getting their daily caffeine fix and breakfast from cafés and realised we could bring this culture to India also.I just tweaked it by serving regular Indian tea and food items and we were all set to roll.” Hygienic and inexpensive, Tea Post has become a coveted hang out spot and has paved its way into the everyday life of people.</p><br>
+                    <span class="mr">- Mr Dashani</span>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Section -->
+        <div class="menu" id="menu">
+                <p class="line">Menu</p>
+            <div class="card">               
+                <div class="item" id="item">
+                    <div class="food">
+                        <img src="masala-tea-1-min-min.jpg">
+                        <div class="cont">
+                            <p class="word">Indian Masala Tea</p>
+                            <p class="price">Rs. <span id="value">185.00</span></p>                           
+                        </div>
+                        <button onclick="add()">ADD TO CART</button>
+                    </div>
+                    <div class="food">
+                        <img src=" lemon-grass-tea.jpg">
+                        <div class="cont">
+                            <p class="word">Lemon Grass Tea</p>
+                        <p class="price">Rs. <span id="value">110.00</span></p>
+                        </div>
+                        <button onclick="add()">ADD TO CART</button>
+                    </div>
+                    <div class="food">
+                        <img src=" jeera-khakhra-2-min.jpg">
+                        <div class="cont">
+                            <p class="word">Jeera Khakhra</p>
+                        <p class="price">Rs. <span id="value">250.00</span></p>
+                        </div>
+                        <button onclick="add()">ADD TO CART</button>
+                    </div>
+                    <div class="food">
+                        <img src=" ganthiya-2-min.png">
+                        <div class="cont">
+                            <p class="word">Ganthiya</p>
+                        <p class="price">Rs. <span id="value">150.00</span></p>
+                        </div>
+                        <button onclick="add()">ADD TO CART</button>
+                    </div>
+                    <div class="food">
+                        <img src=" menu/real spices.jpg">
+                        <div class="cont">
+                            <p class="word">Tea Masala Real Spice</p>
+                        <p class="price">Rs. <span id="value">100.00</span></p>
+                        </div>
+                        <button onclick="add()">ADD TO CART</button>
+                    </div>
+                    <div class="food">
+                        <img src=" menu/methi-bhakhri-min.jpg">
+                        <div class="cont">
+                            <p class="word">Methi Bhakhri</p>
+                        <p class="price">Rs. <span id="value">200.00</span></p>
+                        </div>
+                        <button onclick="add()">ADD TO CART</button>
+                    </div>
+                    <div class="food">
+                        <img src=" menu/jeera-bhakhri-430x430.jpg">
+                        <div class="cont">
+                            <p class="word">Jeera Bhakhri</p>
+                        <p class="price">Rs. <span id="value">190.00</span></p>
+                        </div>
+                        <button onclick="add()">ADD TO CART</button>
+                    </div>
+                    <div class="food">
+                        <img src=" menu/images.jpg">
+                        <div class="cont">
+                            <p class="word">Ganthiya</p>
+                        <p class="price">Rs. <span id="value">100.00</span></p>
+                        </div>
+                        <button onclick="add()">ADD TO CART</button>
+                    </div>
+                    <div class="food">
+                        <img src=" menu/ganthiya-min-430x430.png">
+                        <div class="cont">
+                            <p class="word">Mini Ganthiya</p>
+                        <p class="price">Rs. <span id="value">50.00</span></p>
+                        </div>
+                        <button onclick="add()" >ADD TO CART</button>
+                    </div>
+                    <div class="food">
+                        <img src=" menu/deq-1.jpg">
+                        <div class="cont">
+                            <p class="word">Ganthiya</p>
+                        <p class="price">Rs. <span id="value">120.00</span></p>
+                        </div>
+                        <button onclick="add()">ADD TO CART</button>
+                    </div>
+                    <a class="prev" onclick="prev()">&#10094</a>
+                    <a class="next" onclick="next()">&#10095</a>
+                </div>
+            </div>
+        </div>
+        <!-- Review Section -->
+        <div class="review" id="review">
+            <span class="q1">“</span><p class="line">Customer Review</p>
+            <div class="q2">
+                <div class="qot">
+                    <span class="qoute">“</span>
+                    <div class="custom">                    
+                        <h3>ABC
+                            <span>&#9734</span>
+                            <span>&#9733</span>
+                            <span>&#9733</span>
+                            <span>&#9733</span>
+                            <span>&#9733</span></h3>
+                        <p class="rev">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, quod.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, quod.</p>
+                    </div>
+                </div>
+                <div class="qot">
+                    <span class="qoute">“</span>
+                    <div class="custom">                    
+                        <h3 class="h3">XYZ 
+                            <span>&#9734</span>
+                            <span>&#9734</span>
+                            <span>&#9733</span>
+                            <span>&#9733</span>
+                            <span>&#9733</span>
+                        </h3>
+                        <p class="rev">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, quod.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, quod.</p>
+                    </div>
+                </div>
+                <div class="qot"  id="qot"style="display:none;">
+                    <span class="qoute">“</span>
+                    <div class="custom" id="new">                    
+                        <h3 class="h3"></h3>
+                        <span class="span2"></span>
+                        <p class="rev"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="qot2">
+                <div class="qot ">
+                    <span class="qoute">“</span>
+                    <div class="custom cust2">                    
+                        <h3>Give Your Review Here</h3>
+                        <input type="text" placeholder="Enter Your Name" id="name" class="name">
+                        <!-- <p id="demo"> </p> -->
+                        <!-- <script>
+                            let a = prompt("Enter Your Name: ");
+                            document.getElementById("demo").innerHTML = a;
+                        </script> -->
+                        <textarea row="2" cols="5" placeholder="Enter your review!" id="area"></textarea>
+                        <div class="star">
+                            <span class="stars">&#9734</span>
+                            <span class="stars">&#9734</span>
+                            <span class="stars">&#9734</span>
+                            <span class="stars">&#9734</span>
+                            <span class="stars">&#9734</span>
+                        </div>
+                        <p class="num">0 of 5</p>
+                        <div class="but">
+                            <button class="submit" id="submit" onclick="submit()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact us section -->
+        <div class="contact" id="contact">
+            <h3 class="line">Contact Us</h3>
+            <div class="part">
+                <div class="part-1">
+                    <p>Find Us On:</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14686.376835055622!2d72.5048699!3d23.0386671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xced8801e3907d87e!2sTea%20Post%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1637833164803!5m2!1sen!2sin" width="500" height="450" style="border: 0px; cursor: pointer;" allowfullscreen="" loading="lazy" ></iframe>
+                </div>
+                <div class="part-3"></div>
+                <div class="part-2">
+                    <h3>Contact us for any Question</h3>
+                    <label for="fname" class="lab">Your Name</label><br>
+                    <input type="text" placeholder="Enter your Name:" id="fname" class="fname all" required><br>
+                    <label for="mail" class="lab">Mail</label><br>
+                    <input type="mail" placeholder="Enter your Email:" id="mail" class="mail all" required><br>
+                    <label for="phone" class="lab">Mobile Number</label><br>
+                    <input type="tel" placeholder="Enter your Phone number:" id="phone" class="number all" required><br>
+                    <label for="city" class="lab">City</label><br>
+                    <input type="text" placeholder="Enter your City:" id="city" class="city all"><br>
+                    <label for="msg" class="lab">Message</label><br>
+                    <textarea rows="2" cols="10" placeholder="Enter your message:" class="msg all" id="msg"></textarea><br>
+                    <div class="send">
+                        <button class="btn-send">Send Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contacts" id="contact">
+          <div class="cont">
+            <a href="https://github.com/Simran1201" target="_blank"
+              ><img src="github.png"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/simran-prasad-a151b91a8"
+              target="_blank"
+              ><img src="linkdin.png"
+            /></a>
+            <a href="#" target="_blank"><img src="fb.png" /></a>
+          </div>
+          <div class="lines">
+            <p>Contact</p>
+            <br />
+            <b> teapost@gmail.com</b>
+          </div>
+        </div>
+        Copyright &copy; 2022 All rights reserved | This Cafe Page is made with
+        &#x2764; by Simran Prasad
+      </footer>
+    <script src="index.js"></script>
+</body>
+</html>
